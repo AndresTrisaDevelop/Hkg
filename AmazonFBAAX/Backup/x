@@ -1,0 +1,113 @@
+Comparing files AmazonFBAAX.java and C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+***** AmazonFBAAX.java
+        areaTexto = new javax.swing.JTextArea();
+
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+        areaTexto = new javax.swing.JTextArea();
+        jLabel_DateUpdate = new javax.swing.JLabel();
+
+*****
+
+***** AmazonFBAAX.java
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+
+        jLabel_DateUpdate.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        jLabel_DateUpdate.setText("08-May-2024");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+*****
+
+***** AmazonFBAAX.java
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+*****
+
+***** AmazonFBAAX.java
+                        .addComponent(botonProceso, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFER
+RED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1064, javax.swing.GroupLayout.PREFERRED
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+                        .addComponent(botonProceso, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFER
+RED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel_DateUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_
+SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1064, javax.swing.GroupLayout.PREFERRED
+*****
+
+***** AmazonFBAAX.java
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(botonOrdenes, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_S
+IZE)
+                    .addComponent(botonProceso, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_S
+IZE))
+                .addGap(18, 18, 18)
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(botonOrdenes, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PRE
+FERRED_SIZE)
+                            .addComponent(botonProceso, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PRE
+FERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel_DateUpdate)))
+                .addGap(18, 18, 18)
+*****
+
+***** AmazonFBAAX.java
+    private javax.swing.JButton botonProceso;
+    private javax.swing.JScrollPane jScrollPane1;
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+    private javax.swing.JButton botonProceso;
+    private javax.swing.JLabel jLabel_DateUpdate;
+    private javax.swing.JScrollPane jScrollPane1;
+*****
+
+***** AmazonFBAAX.java
+        
+        if (!(celdasRow[indexByLabelsOrders.type].equalsIgnoreCase("Order")
+                || celdasRow[indexByLabelsOrders.type].equalsIgnoreCase("Refund"))) {
+            celdasRow[indexByLabelsOrders.sku]="";    
+            celdasRow[indexByLabelsOrders.quantity]="";
+        }
+        celdasRow[indexByLabelsOrders.fbaFees]="0";
+        celdasRow[indexByLabelsOrders.productSalesTax]="0"; // 14/03/2024 Solicitud Contabilidad 
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+        
+        // 08/05/2024 Solicitud Tania Aguayo Teams
+        //if (!(celdasRow[indexByLabelsOrders.type].equalsIgnoreCase("Order")
+        //        || celdasRow[indexByLabelsOrders.type].equalsIgnoreCase("Refund"))) {
+        //    celdasRow[indexByLabelsOrders.sku]="";    
+        //    celdasRow[indexByLabelsOrders.quantity]="";
+        //}
+
+        //celdasRow[indexByLabelsOrders.fbaFees]="0"; // 25/04/2024 Solicitud Contabilidad
+        celdasRow[indexByLabelsOrders.productSalesTax]="0"; // 14/03/2024 Solicitud Contabilidad 
+*****
+
+***** AmazonFBAAX.java
+        celdasRow[indexByLabelsOrders.regulatoryFee]="0"; // 02/04/2024 Andres
+        
+***** C:\USERS\ANDRE\JAVAPROYECTOS\AMAZONFBAAX\SRC\MAIN\JAVA\COM\MYCOMPANY\AMAZONFBAAX\AMAZONFBAAX.JAVA
+        celdasRow[indexByLabelsOrders.regulatoryFee]="0"; // 02/04/2024 Andres
+        celdasRow[indexByLabelsOrders.taxOnRegulatoryFee]="0"; // 25/04/2024 Heidi Torres Correos        
+        celdasRow[indexByLabelsOrders.shippingCredits]="0"; // 25/04/2024 Heidi Torres Correos
+        celdasRow[indexByLabelsOrders.shippingCreditsTax]="0"; // 25/04/2024 Heidi Torres Correos
+        celdasRow[indexByLabelsOrders.promotionalRebates]="0"; // 25/04/2024 Heidi Torres Correos
+        celdasRow[indexByLabelsOrders.promotionalRebatesTax]="0"; // 25/04/2024 Heidi Torres Correos
+        
+*****
+
